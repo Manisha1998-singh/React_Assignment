@@ -1,0 +1,35 @@
+Q. What is Emmet?
+A. Emmet is a powerful toolkit for web developers that allows for high-speed coding using abbreviations that expand into full-fledged HTML, CSS, or even JavaScript code. It's especially popular in modern code editors like Visual Studio Code, Sublime Text, Atom, etc.
+
+Q. Difference between a Library and Framework?
+A. A key difference between the two is Inversion of control. When using a library, the control remains with the developer who tells the application when to call library functions. When using a framework, the control is reversed, which means that the framework tells the developer where code needs to be provided and calls it as it requires.
+
+Q. What is CDN? Why do we use it?
+A. A CDN (Content Delivery Network) is a distributed network of servers located in different geographical regions that work together to deliver content (such as HTML pages, JavaScript files, stylesheets, images, and videos) to users quickly and efficiently.
+
+Q. Why is React known as React?
+A. React is a JavaScript Library. The name ‘React’ was chosen because the library was designed to allow developers to react to changes in state and data within an application, and to update the user interface in a declarative and efficient manner.
+
+Q. What is crossorigin in script tag?
+A. The crossorigin attribute in the script tag enables CrossOrigin Resource Sharing (CORS) for loading external JavaScript files from different origin than the hosting web page. This allows the script to access resources from the server hosting the script, such as making HTTP requests or accessing data.
+
+Q. What is difference between React and ReactDOM?
+A. React: React is the core library responsible for creating and managing UI components. It provides the functionality to define how a component should look and behave. React itself doesn't directly manipulate the DOM. It deals with components, state, props, and the Virtual DOM.
+
+ReactDOM: ReactDOM is the library responsible for rendering React components into the actual DOM. It bridges the gap between React's Virtual DOM and the browser's real DOM. You typically use ReactDOM.render() to place React components into a web page.
+
+Q. What is difference between react.development.js and react.production.js files via CDN?
+A. react.development.js: This is the version of React intended for development purposes. It includes helpful error messages, warnings, and detailed logs in the console to assist developers during the development process. This version is not optimized for performance because it includes extra checks and debugging information.
+
+react.production.js: This is the production-ready version of React. It is optimized for performance by stripping out unnecessary development-related code like warnings, error messages, and debugging logs. The production version is smaller and runs faster, making it suitable for deployment in live environments.
+
+Q. What is async and defer?
+A. async:
+The script is loaded asynchronously (in parallel) with the rest of the HTML document.
+The script is executed as soon as it's downloaded, even if the HTML is not fully parsed yet.
+This can sometimes lead to unpredictable results if the script relies on elements in the DOM that haven’t been loaded yet.
+
+defer:
+The script is also loaded asynchronously, but it won't execute until the entire HTML document has been parsed.
+The script execution order is preserved when using defer (unlike async).
+It ensures that your script doesn't interfere with the rendering of the page and that it runs only after the DOM is fully available.
