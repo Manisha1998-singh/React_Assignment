@@ -15,15 +15,16 @@
       src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
     <script type="module">
-      const newJsx = (
-        <div className="title">
-          <h1>Header 1</h1>
-          <h2>Header 2</h2>
-          <h3>Header 3</h3>
-        </div>
+      // Nested header Element using React.createElement(h1,h2,h3 inside a div with class “title”
+      const nestedHeader = React.createElement(
+        "div",
+        { className: "title" },
+        React.createElement("h1", null, "Header 1"),
+        React.createElement("h2", null, "Header 2"),
+        React.createElement("h3", null, "Header 3")
       );
       const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(newJsx);
+      root.render(nestedHeader);
     </script>
     <script type="module" src="index.js"></script>
   </body>
