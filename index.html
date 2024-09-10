@@ -2,10 +2,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React</title>
   </head>
   <body>
-    <div>
-      <h1>Hello World.</h1>
-    </div>
+    <div id="root"></div>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <script type="module">
+      const newJsx = (
+        <div className="title">
+          <h1>Header 1</h1>
+          <h2>Header 2</h2>
+          <h3>Header 3</h3>
+        </div>
+      );
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(newJsx);
+    </script>
+    <script type="module" src="index.js"></script>
   </body>
 </html>
