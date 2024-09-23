@@ -6,26 +6,6 @@
   </head>
   <body>
     <div id="root"></div>
-
-    <script
-      crossorigin
-      src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-    <script type="module">
-      // Nested header Element using React.createElement(h1,h2,h3 inside a div with class “title”
-      const nestedHeader = React.createElement(
-        "div",
-        { className: "title" },
-        React.createElement("h1", null, "Header 1"),
-        React.createElement("h2", null, "Header 2"),
-        React.createElement("h3", null, "Header 3")
-      );
-      const root = ReactDOM.createRoot(document.getElementById("root"));
-      root.render(nestedHeader);
-    </script>
-    <script type="module" src="index.js"></script>
+    <script type="module" src="App.js"></script>
   </body>
 </html>
