@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import Header from "./Components/Header.js";
 
 const Title = ({ children }) => (
   <h1 className="head">{children || "React JSX"}</h1>
@@ -15,6 +16,7 @@ const List = () => (
 );
 const Heading = () => (
   <div className="container">
+    <Header></Header>
     {/* //{Title()} */}
     <Title />
     <Title></Title>
