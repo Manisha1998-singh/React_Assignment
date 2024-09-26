@@ -1,10 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const Title = () => (
-  <h1 className="head" tabIndex="5">
-    React JSX
-  </h1>
+const Title = ({ children }) => (
+  <h1 className="head">{children || "React JSX"}</h1>
 );
 const List = () => (
   <div>
@@ -17,9 +15,16 @@ const List = () => (
 );
 const Heading = () => (
   <div className="container">
-    {Title()}
+    {/* //{Title()} */}
     <Title />
     <Title></Title>
+    {/* 1. Reference to the component, not rendering */}
+    {Title}
+    {/* This is incorrect; it's referencing the function itself  also getting the warnings*/}
+    {/* 2. Immediate rendering without children */}
+    {<Title />}
+    {/* 3. Rendering with children */}
+    {<Title> This is the react functional component</Title>}
     <h1
       className="title"
       style={{ color: "pink", backgroundColor: "red", height: 100 }}>
