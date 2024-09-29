@@ -7,7 +7,7 @@ const Header = () => {
         <a className="navbar-brand" href="#">
           <img
             src="  https://logos-world.net/wp-content/uploads/2020/11/Swiggy-Logo.png"
-            height={20}
+            height={75}
             alt="logo image"
           />
         </a>

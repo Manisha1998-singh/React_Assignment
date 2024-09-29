@@ -1,14 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header.js";
+import Body from "./Components/Body.js";
 
-const Heading = () => (
+import Footer from "./Components/Footer.js";
+
+const AppLayout = () => (
   <div className="container-fluid m-0">
     <Header />
-
-    <List></List>
+    <Body />
+    <Footer />
   </div>
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Heading></Heading>);
+root.render(<AppLayout />);
