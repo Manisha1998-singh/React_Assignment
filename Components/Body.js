@@ -1635,11 +1635,14 @@ const resList = [
 const Body = () => {
   return (
     <>
-      <div>
-        {/* Here mention like resName and cuisine  are the props. */}
-        <RestaurantCards resData={resList[0]} />
-        <RestaurantCards resData={resList[1]} />
-        <RestaurantList />
+      {/* Here mention like resName and cuisine  are the props. */}
+      {/* Always use key not index. key and index not the same. */}
+      <div
+        className="d-flex  w-100  justify-content-center"
+        style={{ flexDirection: "row", flexWrap: "wrap" }}>
+        {resList.map((info) => (
+          <RestaurantCards key={info.id} resData={info} />
+        ))}
       </div>
     </>
   );
